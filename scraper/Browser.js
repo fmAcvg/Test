@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer');
 
 async function startBrowser(page){
     let browser;
-    global.start = `${global.start}`
+    global.start = `${global.page*7}`
     try {
         console.log("Opening the browser......");
         browser = await puppeteer.launch({
